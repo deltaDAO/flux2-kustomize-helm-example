@@ -5618,7 +5618,7 @@ spec:
     spec:
       containers:
       - args:
-        - --events-addr=http://notification-controller.flux-system.svc.cluster.local./
+        - --events-addr=http://notification-controller.flux-system.svc.b1f3ef38-8b3b-4f6c-875c-ccfe32460066.cluster.local./
         - --watch-all-namespaces=true
         - --log-level=info
         - --log-encoding=json
@@ -5701,7 +5701,7 @@ spec:
     spec:
       containers:
       - args:
-        - --events-addr=http://notification-controller.flux-system.svc.cluster.local./
+        - --events-addr=http://notification-controller.flux-system.svc.b1f3ef38-8b3b-4f6c-875c-ccfe32460066.cluster.local./
         - --watch-all-namespaces=true
         - --log-level=info
         - --log-encoding=json
@@ -5874,13 +5874,13 @@ spec:
     spec:
       containers:
       - args:
-        - --events-addr=http://notification-controller.flux-system.svc.cluster.local./
+        - --events-addr=http://notification-controller.flux-system.svc.b1f3ef38-8b3b-4f6c-875c-ccfe32460066.cluster.local./
         - --watch-all-namespaces=true
         - --log-level=info
         - --log-encoding=json
         - --enable-leader-election
         - --storage-path=/data
-        - --storage-adv-addr=source-controller.$(RUNTIME_NAMESPACE).svc.cluster.local.
+        - --storage-adv-addr=source-controller.$(RUNTIME_NAMESPACE).svc.b1f3ef38-8b3b-4f6c-875c-ccfe32460066.cluster.local.
         env:
         - name: RUNTIME_NAMESPACE
           valueFrom:
